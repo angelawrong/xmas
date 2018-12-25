@@ -48,9 +48,9 @@ for (var n=0; n<100 ; n++){
 function draw() {
 	
 	
-	textSize(32);
-	textAlign(CENTER);
-	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+	//textSize(32);
+	//textAlign(CENTER);
+	//text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 
 	
 
@@ -124,7 +124,7 @@ function draw() {
 			noFill()
 			
 		}
-	}
+	
 	
 	triangle(xPosCurrent, yPosCurrent, xPosCurrent-10-(yPosCurrent/3),  yPosCurrent+50+(1080-yPosCurrent)/5, xPosCurrent+5+(yPosCurrent/2), yPosCurrent+(1080-yPosCurrent)/5);
 	
