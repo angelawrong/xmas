@@ -5,10 +5,16 @@
     var counter5 = 0;
 
 
+function keyTyped() {
+    if (key === 'c'){
+        save('myTree.jpg');   
+    }
+}
+
 function mousePressed() {
     clear();
     background('#111111');
-    //blendMode(LIGHTEST);
+    blendMode(BLEND);
 
     counter1 = counter1*0;
     counter2 = counter2*0;
@@ -17,7 +23,8 @@ function mousePressed() {
     counter5 = counter5*0;
 
     for (var n=0; n<100 ; n++){
-
+        
+        
         var gradient = color('hsba(225, 80%, 100%, ' + (100-n)/100 + ')');
         stroke(gradient);
         strokeWeight(1);
@@ -34,8 +41,9 @@ function setup() {
     cursor(CROSS);
     frameRate(24);
     
+    
     for (var n=0; n<100 ; n++){
-	
+	   
 	   var gradient = color('hsba(225, 80%, 100%, ' + (100-n)/100 + ')');
 	   stroke(gradient);
 	   strokeWeight(1);
@@ -49,29 +57,57 @@ function setup() {
 function draw() {
 	
     
+    
 	if ((counter1*counter2*counter3*counter4*counter5) > 0){
     
-    strokeWeight(0.8);
-    noFill();
-    textSize(32);
-	textAlign(LEFT);
-    text("merry x'mas & happy 2019", 2, 0, 540, 30);
-    textAlign(RIGHT);
-    text("rooftop animation", 0, 0, 1088, 30);
+    var white = color(255, 255, 255);
     
-    beginShape();
-    vertex(580, 95);
-    vertex(590, 120);
-    vertex(615, 120);
-    vertex(600, 140);
-    vertex(605, 165);
-    vertex(580, 155);
-    vertex(555, 165);
-    vertex(560, 140);
-    vertex(545, 120);
-    vertex(570, 120);
-    endShape(CLOSE);
         
+    strokeWeight(0.5);
+    noFill();
+    
+    
+    textSize(36);
+	textAlign(LEFT);
+    text("merry x'mas & happy 2019", 2, 0, 540, 36);
+    textAlign(RIGHT);
+    text("rooftop animation", 0, 0, 1088, 36);
+    
+
+    //stroke('#8f98ff');
+    noStroke();
+    fill('#8f98ff');
+    textSize(18); 
+    text("press 'c' to capture an image", 0, 1055, 1080, 30);
+    
+        
+    stroke(white);
+    blendMode(BLEND);
+    strokeWeight(1);
+    
+    
+    var time = second();
+    var rainbow = color('hsba(' + (time*10) % 360 + ', 60%, 100%, 0.5)');
+    fill(rainbow);
+        
+    //text(time, 0, 0, 1088, 30);
+    
+        
+    beginShape();
+    vertex(580, 65);
+    vertex(591, 90);
+    vertex(615, 90);
+    vertex(600, 110);
+    vertex(605, 135);
+    vertex(580, 125);
+    vertex(555, 135);
+    vertex(560, 110);
+    vertex(545, 90);
+    vertex(569, 90);
+    endShape(CLOSE);
+    
+    noFill();
+    blendMode(SOFT_LIGHT);
     
         
     }
