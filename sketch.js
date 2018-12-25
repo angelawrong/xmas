@@ -91,6 +91,13 @@ function draw() {
 			
 			fill(green);
 			
+	
+			textSize(32);
+			textAlign(CENTER);
+			text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+		
+			
+			
 			counter1++;
 			
 		} else if (mouseX < xPos[1]+5 && mouseX > xPos[1]-5 && mouseY < yPos[1]+5 && mouseY > yPos[1]-5){
