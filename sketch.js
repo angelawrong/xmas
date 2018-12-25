@@ -1,5 +1,8 @@
-
-
+var counter1 = 0;
+var counter2 = 0
+var counter3 = 0;
+var counter4 = 0
+var counter5 = 0;
 
 
 
@@ -40,24 +43,21 @@ function setup() {
 }
 
 function draw() {
-	//noStroke();
-	//fill('#8f98ff');
 	
-	 
+	if (counter1 + counter2 + counter3 + counter4 + counter5 == 5){
 	
 	textSize(32);
 	textAlign(CENTER);
-text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
-
-
-
+text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+		
+	}
+	
 
 	var shadesGray = [66, 77, 88, 99];
 
 	var gray = random(shadesGray);
 	
 	var g = color('hsb(0, 0%, ' + gray + '%)');
-	
 	
 	stroke('#8f98ff');
 	strokeWeight(1);
@@ -82,37 +82,46 @@ text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
 			var green = color('hsba(180, 60%, 100%, 0.25)');
 			
 			fill(green);
-			//fill('#111111');
+			
+			var counter1 = 1;
 			
 		} else if (mouseX < xPos[1]+5 && mouseX > xPos[1]-5 && mouseY < yPos[1]+5 && mouseY > yPos[1]-5){
 			
 			var green = color('hsba(100, 60%, 100%, 0.25)');
 			
 			fill(green);
+			
+			var counter2 = 1;
 	
 		} else if (mouseX < xPos[2]+5 && mouseX > xPos[2]-5 && mouseY < yPos[2]+5 && mouseY > yPos[2]-5){
 			
 			var green = color('hsba(150, 60%, 100%, 0.25)');
 			
 			fill(green);
+			
+			var counter3 = 1;
 	
 		} else if (mouseX < xPos[3]+5 && mouseX > xPos[3]-5 && mouseY < yPos[3]+5 && mouseY > yPos[3]-5){
 			
 			var green = color('hsba(90, 60%, 100%, 0.25)');
 			
 			fill(green);
+			
+			var counter4 = 1;
 	
 		} else if (mouseX < xPos[4]+5 && mouseX > xPos[4]-5 && mouseY < yPos[4]+5 && mouseY > yPos[4]-5){
 			
 			var green = color('hsba(100, 60%, 100%, 0.25)');
 			
 			fill(green);
+			
+			var counter5 = 1;
 	
 		}else{
 
-			//blendMode(OVERLAY);
+			
 			noFill()
-			//fill(g);
+			
 		}
 	}
 	
@@ -122,19 +131,7 @@ text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
 	
 	}
 	
-	//triangle(540, 100, 500, 396, 595, 370);
-	//triangle(540, 300, 450, 556, 595, 520);
-	//triangle(540, 460, 410, 460, 775, 640);
-	//triangle(540, 600, 375, 600, 845, 745);
-	//triangle(540, 720, 345, 720, 985, 835);
 
-	
-
-
-  
-  //triangle(mouseX, mouseY, mouseX-15-(mouseY/4), mouseY+100+(1080-mouseY)/5, mouseX+5+(mouseY/2), mouseY+25+(1080-mouseY)/4);
-  
-  
 
   
 }
