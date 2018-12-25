@@ -8,7 +8,7 @@
 function mousePressed() {
     clear();
     background('#111111');
-    blendMode(LIGHTEST);
+    //blendMode(LIGHTEST);
 
     counter1 = counter1*0;
     counter2 = counter2*0;
@@ -58,6 +58,21 @@ function draw() {
     text("merry x'mas & happy 2019", 2, 0, 540, 30);
     textAlign(RIGHT);
     text("rooftop animation", 0, 0, 1088, 30);
+    
+    beginShape();
+    vertex(580, 95);
+    vertex(590, 120);
+    vertex(615, 125);
+    vertex(600, 140);
+    vertex(605, 160);
+    vertex(580, 155);
+    vertex(555, 165);
+    vertex(560, 140);
+    vertex(545, 120);
+    vertex(570, 120);
+    endShape(CLOSE);
+        
+    
         
     }
 
