@@ -47,13 +47,6 @@ for (var n=0; n<100 ; n++){
 
 function draw() {
 	
-	//if (counter1 * counter2 * counter3 * counter4 * counter5 > 1){
-	
-	textSize(32);
-	textAlign(CENTER);
-	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
-		
-	//}
 	
 	
 
@@ -135,7 +128,13 @@ function draw() {
 	
 	}
 	
-
+//if (counter1 * counter2 * counter3 * counter4 * counter5 > 1){
+	
+	textSize(32);
+	textAlign(CENTER);
+	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+		
+	//}
 
   
 }
