@@ -1,8 +1,4 @@
-var counter1 = 0;
-var counter2 = 0
-var counter3 = 0;
-var counter4 = 0
-var counter5 = 0;
+
 
 
 
@@ -10,6 +6,12 @@ function mousePressed() {
 clear();
 background('#111111');
 blendMode(LIGHTEST);
+	
+var counter1 = 0;
+var counter2 = 0
+var counter3 = 0;
+var counter4 = 0
+var counter5 = 0;
 
 for (var n=0; n<100 ; n++){
 	
@@ -29,8 +31,14 @@ function setup() {
   background('#111111');
   cursor(CROSS);
   frameRate(24);
+	
+var counter1 = 0;
+var counter2 = 0
+var counter3 = 0;
+var counter4 = 0
+var counter5 = 0;
   
-   for (var n=0; n<100 ; n++){
+for (var n=0; n<100 ; n++){
 	
 	var gradient = color('hsba(225, 80%, 100%, ' + (100-n)/100 + ')');
 	stroke(gradient);
@@ -44,11 +52,11 @@ function setup() {
 
 function draw() {
 	
-	if (counter1 + counter2 + counter3 + counter4 + counter5 == 5){
+	if (counter1 + counter2 + counter3 + counter4 + counter5 == 50){
 	
 	textSize(32);
 	textAlign(CENTER);
-text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 		
 	}
 	
@@ -83,7 +91,7 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 			
 			fill(green);
 			
-			var counter1 = 1;
+			counter1++;
 			
 		} else if (mouseX < xPos[1]+5 && mouseX > xPos[1]-5 && mouseY < yPos[1]+5 && mouseY > yPos[1]-5){
 			
@@ -91,7 +99,7 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 			
 			fill(green);
 			
-			var counter2 = 1;
+			counter2++;
 	
 		} else if (mouseX < xPos[2]+5 && mouseX > xPos[2]-5 && mouseY < yPos[2]+5 && mouseY > yPos[2]-5){
 			
@@ -99,7 +107,7 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 			
 			fill(green);
 			
-			var counter3 = 1;
+			counter3++;
 	
 		} else if (mouseX < xPos[3]+5 && mouseX > xPos[3]-5 && mouseY < yPos[3]+5 && mouseY > yPos[3]-5){
 			
@@ -107,7 +115,7 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 			
 			fill(green);
 			
-			var counter4 = 1;
+			counter4++;
 	
 		} else if (mouseX < xPos[4]+5 && mouseX > xPos[4]-5 && mouseY < yPos[4]+5 && mouseY > yPos[4]-5){
 			
@@ -115,7 +123,7 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 			
 			fill(green);
 			
-			var counter5 = 1;
+			counter5++;
 	
 		}else{
 
