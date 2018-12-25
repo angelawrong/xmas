@@ -10,11 +10,11 @@ function mousePressed() {
     background('#111111');
     blendMode(LIGHTEST);
 
-    var counter1 = 0;
-    var counter2 = 0;
-    var counter3 = 0;
-    var counter4 = 0;
-    var counter5 = 0;
+    counter1 = counter1*0;
+    counter2 = counter2*0;
+    counter3 = counter3*0;
+    counter4 = counter4*0;
+    counter5 = counter5*0;
 
     for (var n=0; n<100 ; n++){
 
@@ -34,12 +34,6 @@ function setup() {
     cursor(CROSS);
     frameRate(24);
     
-    var counter1 = 0;
-    var counter2 = 0;
-    var counter3 = 0;
-    var counter4 = 0;
-    var counter5 = 0;
-  
     for (var n=0; n<100 ; n++){
 	
 	   var gradient = color('hsba(225, 80%, 100%, ' + (100-n)/100 + ')');
@@ -54,11 +48,16 @@ function setup() {
 
 function draw() {
 	
+    
 	if ((counter1*counter2*counter3*counter4*counter5) > 0){
-        
+    
+    strokeWeight(0.8);
+    noFill();
     textSize(32);
-	textAlign(CENTER);
-    text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
+	textAlign(LEFT);
+    text("merry x'mas & happy 2019", 2, 0, 540, 30);
+    textAlign(RIGHT);
+    text("rooftop animation", 0, 0, 1088, 30);
         
     }
 
@@ -70,6 +69,8 @@ function draw() {
 	
 	stroke('#8f98ff');
 	strokeWeight(1);
+    
+    blendMode(SOFT_LIGHT);
 	
 	noFill();
 	
@@ -78,59 +79,68 @@ function draw() {
 	
 	for (var i=0; i<yPos.length; i++){
 	
+        
+            
         xPosCurrent = xPos[i];
         yPosCurrent = yPos[i];
+        
+        if (xPosCurrent == 0 && yPosCurrent == 0){
+        
+        noStroke();
+            
+        }
+        
+        
 
         if (i == 5){
 
-            blendMode(SOFT_LIGHT);
+            
+            
+            
 
+           if (mouseX < xPos[0]+5 && mouseX > xPos[0]-5 && mouseY < yPos[0]+5 && mouseY > yPos[0]-5){
 
-            if (mouseX < xPos[0]+5 && mouseX > xPos[0]-5 && mouseY < yPos[0]+5 && mouseY > yPos[0]-5){
+                var green1 = color('hsba(180, 60%, 100%, 0.25)');
 
-                var green = color('hsba(180, 60%, 100%, 0.25)');
-
-                fill(green);
+                fill(green1);
 
                 counter1++;
 
             } else if (mouseX < xPos[1]+5 && mouseX > xPos[1]-5 && mouseY < yPos[1]+5 && mouseY > yPos[1]-5){
 
-                var green = color('hsba(100, 60%, 100%, 0.25)');
+                var green2 = color('hsba(100, 60%, 100%, 0.25)');
 
-                fill(green);
+                fill(green2);
                 
                 counter2++;
 
             } else if (mouseX < xPos[2]+5 && mouseX > xPos[2]-5 && mouseY < yPos[2]+5 && mouseY > yPos[2]-5){
 
-                var green = color('hsba(150, 60%, 100%, 0.25)');
+                var green3 = color('hsba(150, 60%, 100%, 0.25)');
 
-                fill(green);
+                fill(green3);
                 
                 counter3++;
 
             } else if (mouseX < xPos[3]+5 && mouseX > xPos[3]-5 && mouseY < yPos[3]+5 && mouseY > yPos[3]-5){
 
-                var green = color('hsba(90, 60%, 100%, 0.25)');
+                var green4 = color('hsba(90, 60%, 100%, 0.25)');
 
-                fill(green);
+                fill(green4);
                 
                 counter4++;
 
             } else if (mouseX < xPos[4]+5 && mouseX > xPos[4]-5 && mouseY < yPos[4]+5 && mouseY > yPos[4]-5){
 
-                var green = color('hsba(100, 60%, 100%, 0.25)');
+                var green5 = color('hsba(100, 60%, 100%, 0.25)');
 
-                fill(green);
+                fill(green5);
                 
                 counter5++;
 
             }else{
-
-                //blendMode(OVERLAY);
+  
                 noFill()
-                //fill(g);
             }
 
         }
