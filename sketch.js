@@ -62,9 +62,9 @@ function draw() {
     beginShape();
     vertex(580, 95);
     vertex(590, 120);
-    vertex(615, 125);
+    vertex(615, 120);
     vertex(600, 140);
-    vertex(605, 160);
+    vertex(605, 165);
     vertex(580, 155);
     vertex(555, 165);
     vertex(560, 140);
