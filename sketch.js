@@ -47,7 +47,13 @@ for (var n=0; n<100 ; n++){
 
 function draw() {
 	
+	if (counter1 * counter2 * counter3 * counter4 * counter5 > 1){
 	
+	textSize(32);
+	textAlign(CENTER);
+	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+		
+	}
 	
 
 	var shadesGray = [66, 77, 88, 99];
@@ -79,13 +85,6 @@ function draw() {
 			var green = color('hsba(180, 60%, 100%, 0.25)');
 			
 			fill(green);
-			
-	
-			textSize(32);
-			textAlign(CENTER);
-			text("merry x'mas & happy 2019", 0, 0, 1080, 30);
-		
-			
 			
 			counter1++;
 			
