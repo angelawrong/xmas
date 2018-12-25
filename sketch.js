@@ -1,5 +1,5 @@
 
-
+var counter = 0;
 
 
 
@@ -47,7 +47,7 @@ function draw() {
 	
 	textSize(32);
 	textAlign(CENTER);
-text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
+text("merry x'mas & happy 2019" + counter, 0, 0, 1080, 30);
 
 
 
@@ -82,6 +82,9 @@ text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
 			var green = color('hsba(180, 60%, 100%, 0.25)');
 			
 			fill(green);
+			
+			counter++;
+			
 			//fill('#111111');
 			
 		} else if (mouseX < xPos[1]+5 && mouseX > xPos[1]-5 && mouseY < yPos[1]+5 && mouseY > yPos[1]-5){
@@ -122,18 +125,7 @@ text("merry x'mas & happy 2019 !", 0, 0, 1080, 30);
 	
 	}
 	
-	//triangle(540, 100, 500, 396, 595, 370);
-	//triangle(540, 300, 450, 556, 595, 520);
-	//triangle(540, 460, 410, 460, 775, 640);
-	//triangle(540, 600, 375, 600, 845, 745);
-	//triangle(540, 720, 345, 720, 985, 835);
-
 	
-
-
-  
-  //triangle(mouseX, mouseY, mouseX-15-(mouseY/4), mouseY+100+(1080-mouseY)/5, mouseX+5+(mouseY/2), mouseY+25+(1080-mouseY)/4);
-  
   
 
   
