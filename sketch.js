@@ -92,7 +92,9 @@ function draw() {
 			fill(green);
 			
 	
-			
+			textSize(32);
+			textAlign(CENTER);
+			text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 		
 			
 			
