@@ -1,8 +1,8 @@
-var counter1 = 0;
-var counter2 = 0;
-var counter3 = 0;
-var counter4 = 0;
-var counter5 = 0;
+//var counter1 = 0;
+//var counter2 = 0;
+//var counter3 = 0;
+//var counter4 = 0;
+//var counter5 = 0;
 
 
 
@@ -44,13 +44,13 @@ function setup() {
 
 function draw() {
 	
-	if ((counter1 + counter2 + counter3 + counter4 + counter5) == 5){
+	//if (counter == 1){
 	
-	textSize(32);
-	textAlign(CENTER);
-	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+	//textSize(32);
+	//textAlign(CENTER);
+	//text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 		
-	}
+	//}
 
 	
 
@@ -76,6 +76,7 @@ function draw() {
 	if (i == 5){
 	
 		blendMode(SOFT_LIGHT);
+		
 		
 	
 		if (mouseX < xPos[0]+5 && mouseX > xPos[0]-5 && mouseY < yPos[0]+5 && mouseY > yPos[0]-5){
