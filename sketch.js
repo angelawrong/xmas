@@ -44,13 +44,7 @@ function setup() {
 
 function draw() {
 	
-	if (counter1 + counter2 + counter3 + counter4 + counter5 == 5){
-	
-	textSize(32);
-	textAlign(CENTER);
-text("merry x'mas & happy 2019", 0, 0, 1080, 30);
-		
-	}
+
 	
 
 	var shadesGray = [66, 77, 88, 99];
@@ -127,7 +121,13 @@ text("merry x'mas & happy 2019", 0, 0, 1080, 30);
 	
 	triangle(xPosCurrent, yPosCurrent, xPosCurrent-10-(yPosCurrent/3),  yPosCurrent+50+(1080-yPosCurrent)/5, xPosCurrent+5+(yPosCurrent/2), yPosCurrent+(1080-yPosCurrent)/5);
 	
+	if ((counter1 + counter2 + counter3 + counter4 + counter5) == 5){
 	
+	textSize(32);
+	textAlign(CENTER);
+	text("merry x'mas & happy 2019", 0, 0, 1080, 30);
+		
+	}
 	
 	}
 	
