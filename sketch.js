@@ -1,4 +1,8 @@
-
+var counter1 = 0;
+var counter2 = 0
+var counter3 = 0;
+var counter4 = 0
+var counter5 = 0;
 
 
 
@@ -7,11 +11,6 @@ clear();
 background('#111111');
 blendMode(LIGHTEST);
 	
-var counter1 = 0;
-var counter2 = 0
-var counter3 = 0;
-var counter4 = 0
-var counter5 = 0;
 
 for (var n=0; n<100 ; n++){
 	
@@ -32,11 +31,7 @@ function setup() {
   cursor(CROSS);
   frameRate(24);
 	
-var counter1 = 0;
-var counter2 = 0
-var counter3 = 0;
-var counter4 = 0
-var counter5 = 0;
+
   
 for (var n=0; n<100 ; n++){
 	
@@ -52,7 +47,7 @@ for (var n=0; n<100 ; n++){
 
 function draw() {
 	
-	if (counter1 + counter2 + counter3 + counter4 + counter5 == 50){
+	if (counter1 * counter2 * counter3 * counter4 * counter5 > 1){
 	
 	textSize(32);
 	textAlign(CENTER);
