@@ -95,15 +95,15 @@ function draw() {
         
     beginShape();
     vertex(580, 65);
-    vertex(591, 90);
-    vertex(615, 90);
+    vertex(592, 90);
+    vertex(616, 88);
     vertex(600, 110);
     vertex(605, 135);
     vertex(580, 125);
     vertex(555, 135);
     vertex(560, 110);
-    vertex(545, 90);
-    vertex(569, 90);
+    vertex(544, 88);
+    vertex(568, 90);
     endShape(CLOSE);
     
     noFill();
